@@ -15,8 +15,6 @@
  * limitations under the License.
  **/
 
-const util = require('util');
-
 function nrInputShim(node, fn) {
     node.on('input', function (msg, send, done) {
         send = send || node.send;
@@ -45,7 +43,7 @@ module.exports = function (RED) {
                 if (isNaN(level)) level = 6; //default
 
                 if (Array.isArray(value)) {
-                    for (var i in value) {
+                    for (var i = 0; i < value.length; i++) {
                         f = value[i];
 
                         if (typeof f.filename !== 'string') {

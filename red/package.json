@@ -1,5 +1,5 @@
 {
-  "name": "@dceejay/node-red-contrib-zip",
+  "name": "node-red-contrib-zip",
   "version": "1.2.0",
   "description": "Node-RED node to create and read ZIP files",
   "scripts": {
@@ -33,6 +33,6 @@
     "jszip"
   ],
   "engines": {
-      "node": ">=18"
+      "node": ">=14"
   }
 }
